@@ -14,9 +14,10 @@ document.addEventListener("DOMContentLoaded", function() {
     controlPanel.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
     
     controlPanel.innerHTML = `
-        <button id="btn-artists" style="padding: 8px 16px; margin: 0 5px; cursor: pointer; font-weight: bold; background: #3b82f6; color: white; border: none; border-radius: 4px; transition: 0.2s;">Browse by Artist</button>
-        <button id="btn-songs" style="padding: 8px 16px; margin: 0 5px; cursor: pointer; font-weight: normal; background: #e5e7eb; color: #333; border: none; border-radius: 4px; transition: 0.2s;">Browse by Song</button>
-        <input type="text" id="search-input" placeholder="Search artists or songs (e.g., 'elvi')..." style="padding: 8px 12px; width: 100%; max-width: 350px; margin-left: 20px; border-radius: 4px; border: 1px solid #ccc; font-size: 15px;">
+    <input type="text" id="search-input" placeholder="Search artists or songs (e.g., 'elvi')..." style="padding: 8px 12px; width: 100%; max-width: 350px; margin-left: 20px; border-radius: 4px; border: 1px solid #ccc; font-size: 15px;">
+	<p style="color: white">or</p>
+    <button id="btn-artists" style="padding: 8px 16px; margin: 0 5px; cursor: pointer; font-weight: bold; background: #3b82f6; color: white; border: none; border-radius: 4px; transition: 0.2s;">Browse by Artist</button>
+    <span style="color: white">or</span> <button id="btn-songs" style="padding: 8px 16px; margin: 0 5px; cursor: pointer; font-weight: normal; background: #e5e7eb; color: #333; border: none; border-radius: 4px; transition: 0.2s;">Browse by Song</button>
     `;
     
     // Insert after header, before nav menu
